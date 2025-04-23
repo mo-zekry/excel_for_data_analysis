@@ -1,15 +1,11 @@
 # 📊 Lesson 1: Getting Started with Excel
 
-**(⏳ Estimated Duration: 1 hour)**
-
----
-
 ## 🎯 Learning Objectives:
 
-*   Become familiar with the core components of the Excel user interface.
-*   Understand how to create, open, save, and manage Excel workbook files.
-*   Learn fundamental techniques for formatting data within cells for clarity and presentation.
-*   Master basic data entry, editing, and copying methods.
+* Become familiar with the core components of the Excel user interface.
+* Understand how to create, open, save, and manage Excel workbook files.
+* Learn fundamental techniques for formatting data within cells for clarity and presentation.
+* Master basic data entry, editing, and copying methods.
 
 ---
 
@@ -17,106 +13,109 @@
 
 ### 1. Excel Overview: Navigating Your Workspace
 
-*   **The Excel Interface:** Get acquainted with the essential tools:
-    *   ✨ **Ribbon:** Your command center with tabs (File, Home, Insert, etc.) organizing features.
-    *   🔧 **Quick Access Toolbar (QAT):** Customizable shortcuts for your favorite commands (Save, Undo, Redo).
-    *   ∑ **Formula Bar:** View and edit data/formulas in the active cell.
-    *   📍 **Name Box:** See the address (e.g., A1) of your selected cell.
+* **The Excel Interface:** Get acquainted with the essential tools:
 
-    ![Excel Interface Overview](./Images/Lesson1/excel_interface.png)
-    *The main components of the Excel interface labeled for easy identification*
+  * ✨ **Ribbon:** Your command center with tabs (File, Home, Insert, etc.) organizing features.
+  * 🔧 **Quick Access Toolbar (QAT):** Customizable shortcuts for your favorite commands (Save, Undo, Redo).
+  * ∑ **Formula Bar:** View and edit data/formulas in the active cell.
+  * 📍 **Name Box:** See the address (e.g., A1) of your selected cell.
 
-*   **Worksheets:** Manage the pages within your workbook:
-    *   Learn to add (`+`), delete, rename (double-click), and switch between sheets.
+  ![Excel Interface Overview](./Images/Lesson1/excel_interface.png)
+  *The main components of the Excel interface labeled for easy identification*
+* **Worksheets:** Manage the pages within your workbook:
 
-    ![Worksheet Navigation](./Images/Lesson1/worksheet_tabs.png)
-    *Working with worksheet tabs at the bottom of the Excel window*
+  * Learn to add (`+`), delete, rename (double-click), and switch between sheets.
 
-*   **Cells & Navigation:** Master movement within the grid:
-    *   Understand Rows (numbered) & Columns (lettered).
-    *   Select cells, ranges, rows, and columns.
-    *   Navigate efficiently using mouse, arrow keys, and shortcuts (Ctrl + Arrows, Home, Ctrl + Home/End).
+  ![Worksheet Navigation](./Images/Lesson1/worksheet_tabs.png)
+  *Working with worksheet tabs at the bottom of the Excel window*
+* **Cells & Navigation:** Master movement within the grid:
+
+  * Understand Rows (numbered) & Columns (lettered).
+  * Select cells, ranges, rows, and columns.
+  * Navigate efficiently using mouse, arrow keys, and shortcuts (Ctrl + Arrows, Home, Ctrl + Home/End).
 
 ### 2. Workbook Management: Handling Your Files
 
-*   **Creating:** Start fresh with a blank workbook or use helpful templates.
-*   **Opening:** Access existing `.xlsx`, `.xls`, or `.csv` files.
-*   **Saving:**
-    *   `Save`: Updates the current file.
-    *   `Save As`: Creates a new copy, changes the name, or selects a different format (like `.xlsx` or `.csv`).
+* **Creating:** Start fresh with a blank workbook or use helpful templates.
+* **Opening:** Access existing `.xlsx`, `.xls`, or `.csv` files.
+* **Saving:**
 
-    ![Workbook Management](./Images/Lesson1/workbook_management.png)
-    *Creating, saving, and opening Excel workbooks*
+  * `Save`: Updates the current file.
+  * `Save As`: Creates a new copy, changes the name, or selects a different format (like `.xlsx` or `.csv`).
+
+  ![Workbook Management](./Images/Lesson1/workbook_management.png)
+  *Creating, saving, and opening Excel workbooks*
 
 ### 3. Cell Formatting: Making Data Look Good
 
-*   **Number Formats:** Display data appropriately:
-    *   Use `General`, `Number`, `Currency`, `Accounting`, `Date`, `Time`, `Percentage`, etc.
-    *   > **Note:** Formatting changes appearance, not the underlying value!
+* **Number Formats:** Display data appropriately:
 
-    ![Number Formatting](./Images/Lesson1/number_formats.png)
-    *Examples of the same number value displayed in different number formats*
+  * Use `General`, `Number`, `Currency`, `Accounting`, `Date`, `Time`, `Percentage`, etc.
+  * > **Note:** Formatting changes appearance, not the underlying value!
+    >
 
-*   **Text Formatting:** Style your text:
-    *   Apply **Bold**, *Italics*, Underline, change Font (style, size, color).
+  ![Number Formatting](./Images/Lesson1/number_formats.png)
+  *Examples of the same number value displayed in different number formats*
+* **Text Formatting:** Style your text:
 
-    ![Text Formatting](./Images/Lesson1/text_formatting.png)
-    *Text formatting options in the Home tab ribbon*
+  * Apply **Bold**, *Italics*, Underline, change Font (style, size, color).
 
-*   **Alignment:** Position data within cells:
-    *   Horizontal (Left, Center, Right) & Vertical (Top, Middle, Bottom).
-    *   `Wrap Text`: Fit long text into a cell.
-    *   `Merge & Center`: Combine cells for titles.
+  ![Text Formatting](./Images/Lesson1/text_formatting.png)
+  *Text formatting options in the Home tab ribbon*
+* **Alignment:** Position data within cells:
 
-    ![Cell Alignment](./Images/Lesson1/cell_alignment.png)
-    *Different cell alignment options and their effects*
+  * Horizontal (Left, Center, Right) & Vertical (Top, Middle, Bottom).
+  * `Wrap Text`: Fit long text into a cell.
+  * `Merge & Center`: Combine cells for titles.
+
+  ![Cell Alignment](./Images/Lesson1/cell_alignment.png)
+  *Different cell alignment options and their effects*
 
 ### 4. Basic Spreadsheet Practices: Working with Data
 
-*   **Entering Data:** Type text, numbers, or dates into the active cell.
+* **Entering Data:** Type text, numbers, or dates into the active cell.
 
-    ![Data Entry](./Images/Lesson1/data_entry.png)
-    *Different types of data being entered into an Excel worksheet*
+  ![Data Entry](./Images/Lesson1/data_entry.png)
+  *Different types of data being entered into an Excel worksheet*
+* **Editing Data:** Modify cell content (double-click, type over, use Formula Bar).
 
-*   **Editing Data:** Modify cell content (double-click, type over, use Formula Bar).
+  ![Editing Cell Content](./Images/Lesson1/editing_data.png)
+  *Different methods for editing cell content in Excel*
+* **Copying & Pasting:** Duplicate data efficiently:
 
-    ![Editing Cell Content](./Images/Lesson1/editing_data.png)
-    *Different methods for editing cell content in Excel*
+  * Shortcuts: `Ctrl+C` (Copy), `Ctrl+V` (Paste).
+  * Ribbon/Right-click options.
+  * ✨ **Paste Special:** Paste only values, formatting, formulas, or transpose data.
 
-*   **Copying & Pasting:** Duplicate data efficiently:
-    *   Shortcuts: `Ctrl+C` (Copy), `Ctrl+V` (Paste).
-    *   Ribbon/Right-click options.
-    *   ✨ **Paste Special:** Paste only values, formatting, formulas, or transpose data.
-
-    ![Copy and Paste Methods](./Images/Lesson1/copy_paste.png)
-    *Different copy and paste options including Paste Special dialog*
+  ![Copy and Paste Methods](./Images/Lesson1/copy_paste.png)
+  *Different copy and paste options including Paste Special dialog*
 
 ---
 
 ## ✨ Key Takeaways:
 
-> *   Excel uses a **Ribbon** for commands and a grid of **Cells** organized into **Worksheets**.
-> *   Mastering **navigation** and basic **file management** (Create, Open, Save) is crucial.
-> *   **Formatting** enhances readability without changing the core data.
-> *   Basic **data entry, editing, and copy/paste** are fundamental skills.
+> * Excel uses a **Ribbon** for commands and a grid of **Cells** organized into **Worksheets**.
+> * Mastering **navigation** and basic **file management** (Create, Open, Save) is crucial.
+> * **Formatting** enhances readability without changing the core data.
+> * Basic **data entry, editing, and copy/paste** are fundamental skills.
 
 ---
 
 ## 🛠️ Activity: Your First Spreadsheet
 
-*   **Goal:** Create and format a simple data table.
-*   **Steps:**
-    1.  🚀 **Launch Excel:** Create a new, blank workbook.
-    2.  💾 **Save:** Save the file as `MyFirstSpreadsheet.xlsx`.
-    3.  📝 **Rename Sheet:** Change `Sheet1` to `Practice Data`.
-    4.  🏗️ **Build Table:** In cell `A1`, type `Item Name`. In `B1`, type `Quantity`. In `C1`, type `Price`. In `D1`, type `Total Cost`.
-    5.  ✍️ **Enter Data:** Add 3-5 rows of sample data below the headers.
-        *   *Example Row:* Item Name: `Apples`, Quantity: `10`, Price: `0.5`
-    6.  💲 **Format Numbers:** Select the `Price` column data and apply the `Currency` format. (Leave `Total Cost` for later lessons).
-    7.  🎨 **Format Headers:** Select row 1 (A1:D1). Apply **Bold** formatting and choose a light background fill color (Home tab > Font group).
-    8.  ↔️ **Align Data:** Select the `Quantity` column data (B2 downwards) and apply `Center` alignment (Home tab > Alignment group).
-    9.  📋 **Copy/Paste:** Copy one entire row of your data and paste it below the existing data.
-    10. 🔄 **Practice Editing:** Change the `Quantity` in one of the rows.
-    11. 💾 **Save Again:** Save your changes!
+* **Goal:** Create and format a simple data table.
+* **Steps:**
+  1. 🚀 **Launch Excel:** Create a new, blank workbook.
+  2. 💾 **Save:** Save the file as `MyFirstSpreadsheet.xlsx`.
+  3. 📝 **Rename Sheet:** Change `Sheet1` to `Practice Data`.
+  4. 🏗️ **Build Table:** In cell `A1`, type `Item Name`. In `B1`, type `Quantity`. In `C1`, type `Price`. In `D1`, type `Total Cost`.
+  5. ✍️ **Enter Data:** Add 3-5 rows of sample data below the headers.
+     * *Example Row:* Item Name: `Apples`, Quantity: `10`, Price: `0.5`
+  6. 💲 **Format Numbers:** Select the `Price` column data and apply the `Currency` format. (Leave `Total Cost` for later lessons).
+  7. 🎨 **Format Headers:** Select row 1 (A1:D1). Apply **Bold** formatting and choose a light background fill color (Home tab > Font group).
+  8. ↔️ **Align Data:** Select the `Quantity` column data (B2 downwards) and apply `Center` alignment (Home tab > Alignment group).
+  9. 📋 **Copy/Paste:** Copy one entire row of your data and paste it below the existing data.
+  10. 🔄 **Practice Editing:** Change the `Quantity` in one of the rows.
+  11. 💾 **Save Again:** Save your changes!
 
 ---
