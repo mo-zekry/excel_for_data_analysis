@@ -37,9 +37,6 @@
     *   Select cells, ranges, rows, and columns.
     *   Navigate efficiently using mouse, arrow keys, and shortcuts (Ctrl + Arrows, Home, Ctrl + Home/End).
 
-    ![Cell Selection Techniques](./Images/Lesson1/cell_selection.png)
-    *Different methods of selecting cells, rows, and columns in Excel*
-
 ### 2. Workbook Management: Handling Your Files
 
 *   **Creating:** Start fresh with a blank workbook or use helpful templates.
