@@ -23,6 +23,10 @@
         *   `To value`: The target value you want the formula to reach.
         *   `By changing cell`: The single input cell that Excel can change to reach the target.
     *   > **Use Case:** Finding the number of units you need to sell to break even (reach a profit of $0), determining the required score on a final exam to achieve a specific overall grade.
+
+    ![Goal Seek](./Images/Lesson7/goal_seek.png)
+    *Using Goal Seek to find the input value needed to achieve a specific result*
+
 *   **Scenario Manager:** Creates and saves different sets of input values (scenarios) and allows you to compare their effects on formula results.
     *   **How it works:**
         *   Define `Changing cells`: The input cells that will vary between scenarios.
@@ -31,6 +35,9 @@
         *   `Summary...`: Create a summary report (as a new sheet) comparing the results of all defined scenarios side-by-side.
     *   > **Use Case:** Comparing profitability under different sales volume and cost assumptions, evaluating different loan options.
 
+    ![Scenario Manager](./Images/Lesson7/scenario_manager.png)
+    *Creating and comparing different scenarios with the Scenario Manager*
+
 ### 2. Introduction to the Analysis ToolPak: Statistical Power
 
 *   **Enabling the Add-in:**
@@ -38,6 +45,10 @@
     *   At the bottom, manage `Excel Add-ins`, click `Go...`.
     *   Check the box for `Analysis ToolPak` and click `OK`.
     *   The `Data Analysis` command will now appear on the `Data` tab.
+
+    ![Enabling Analysis ToolPak](./Images/Lesson7/enable_toolpak.png)
+    *Steps to enable the Analysis ToolPak add-in in Excel*
+
 *   **Overview:** Provides a collection of tools for statistical and engineering analysis.
 *   **Key Tools (Focus for this lesson):**
     *   📊 **Descriptive Statistics:** Generates a report summarizing key statistical measures for a dataset (mean, median, mode, standard deviation, variance, range, min, max, count, sum, confidence level, etc.).
@@ -45,15 +56,26 @@
         *   Specify the `Input Range` (your data column/row).
         *   Choose `Output Range` (where to put the report).
         *   Check `Summary statistics`.
-    *   <0xE2><0x9A><0x97>️ **Correlation:** Calculates the correlation coefficient between two or more numerical variables, indicating the strength and direction of their linear relationship (-1 to +1).
+
+        ![Descriptive Statistics](./Images/Lesson7/descriptive_statistics.png)
+        *Using the Descriptive Statistics tool to generate statistical summaries*
+
+    *   ⚡️ **Correlation:** Calculates the correlation coefficient between two or more numerical variables, indicating the strength and direction of their linear relationship (-1 to +1).
         *   Select `Data Analysis` > `Correlation`.
         *   Specify the `Input Range` (including all variables to compare).
         *   Choose `Output Range`.
-    *   <0xF0><0x9F><0x93><0x8A> **Histogram:** Creates frequency distributions and histogram charts (similar to the standard chart type but with more options via the ToolPak, like specifying bins).
+
+        ![Correlation Analysis](./Images/Lesson7/correlation.png)
+        *Using the Correlation tool to analyze relationships between variables*
+
+    *   📊 **Histogram:** Creates frequency distributions and histogram charts (similar to the standard chart type but with more options via the ToolPak, like specifying bins).
         *   Select `Data Analysis` > `Histogram`.
         *   Specify `Input Range` (the data to analyze).
         *   Specify `Bin Range` (optional - a range containing the upper bounds for your desired bins/intervals).
         *   Choose `Output Range` and check `Chart Output`.
+
+        ![Histogram Tool](./Images/Lesson7/histogram_tool.png)
+        *Creating frequency distributions and histograms with the Histogram tool*
 
 ### 3. Real-World Scenario Demonstrations
 
@@ -107,7 +129,7 @@
         *   `Output Range`: Choose an empty cell on the sheet (e.g., `D1`).
         *   Check `Summary statistics`.
         *   Click `OK`. Review the generated statistics (Mean, Median, Standard Deviation, etc.).
-    3.  **<0xE2><0x9A><0x97>️ Analysis ToolPak - Correlation:**
+    3.  **⚡️ Analysis ToolPak - Correlation:**
         *   Go to `Data` > `Data Analysis`.
         *   Select `Correlation` and click `OK`.
         *   `Input Range`: Select the data in *both* Column A and Column B (`$A$1:$B$9` or similar).

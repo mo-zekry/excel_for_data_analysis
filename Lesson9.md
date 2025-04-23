@@ -19,6 +19,10 @@
 
 *   **Fundamentals (Lesson 1):** Interface navigation, cell formatting, basic data entry.
 *   **Data Handling (Lesson 2):** Importing data (CSV/Text), cleaning (missing values, duplicates), sorting, filtering, Text-to-Columns.
+
+    ![Course Overview](./Images/Lesson9/course_overview.png)
+    *Visual summary of the key concepts covered throughout the course*
+
 *   **Formulas & Functions (Lessons 3 & 4):**
     *   Basic Math (`SUM`, `AVERAGE`, `COUNT`, `MIN`, `MAX`).
     *   Logical (`IF`, `AND`, `OR`).
@@ -28,10 +32,21 @@
     *   Conditional (`SUMIF(S)`, `COUNTIF(S)`).
     *   Referencing (Relative vs. Absolute `$` ).
     *   Error Handling (`IFERROR`).
+
+    ![Functions Review](./Images/Lesson9/functions_review.png)
+    *Review of the various Excel functions covered in the course*
+
 *   **Pivot Tables & Charts (Lesson 5):** Creating summaries, grouping, filtering, visualizing with Pivot Charts, Slicers, Timelines.
 *   **Visualization & Dashboards (Lesson 6):** Standard charts (Column, Bar, Line, Pie, Scatter), Conditional Formatting, Dashboard design principles.
+
+    ![Data Visualization Review](./Images/Lesson9/visualization_review.png)
+    *Example of the visualization techniques and charts covered*
+
 *   **Analysis Tools (Lesson 7):** What-If Analysis (`Goal Seek`, `Scenario Manager`), Analysis ToolPak (`Descriptive Statistics`, `Correlation`).
 *   **Integration (Lesson 8):** Applying the end-to-end process in the mini-project.
+
+    ![Data Analysis Process](./Images/Lesson9/analysis_process.png)
+    *The complete data analysis workflow from raw data to insights*
 
 ### 2. Common Pitfalls & Best Practices
 
@@ -43,6 +58,10 @@
     *   Creating overly complex, hard-to-understand formulas.
     *   Using Pie charts for too many categories.
     *   Not refreshing Pivot Tables after source data changes.
+
+    ![Common Pitfalls](./Images/Lesson9/common_pitfalls.png)
+    *Visual examples of common Excel mistakes to avoid*
+
 *   **Best Practices:**
     *   **Structure Data Well:** Use Excel Tables (`Ctrl+T`) for structured data.
     *   **Clean Data First:** Address quality issues before analysis.
@@ -52,6 +71,9 @@
     *   **Choose Clear Visualizations:** Select chart types appropriate for the data and message.
     *   **Label Everything:** Ensure charts and tables have clear titles and labels.
     *   **Save Incrementally:** Save versions of your work, especially before major changes.
+
+    ![Best Practices](./Images/Lesson9/best_practices.png)
+    *Examples illustrating Excel best practices for effective data analysis*
 
 ### 3. Addressing Student Queries & Clarifications
 

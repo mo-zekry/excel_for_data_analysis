@@ -19,6 +19,7 @@
 ### 1. Introduction to Pivot Tables: Summarizing Data Dynamically
 
 *   **What are Pivot Tables?** Powerful tools to summarize, analyze, explore, and present large amounts of data quickly and easily without using complex formulas.
+
 *   **Creating Pivot Tables:**
     *   Select your source data range or Excel Table.
     *   Go to the `Insert` tab > `PivotTable`.
@@ -30,18 +31,36 @@
             *   **Columns:** Creates column headers from the field's unique values.
             *   **Rows:** Creates row labels from the field's unique values.
             *   **Values:** Performs calculations (Sum, Count, Average, etc.) on the data.
+
+    ![Creating Pivot Tables](./Images/Lesson5/create_pivot_table.png)
+    *Creating a pivot table from source data showing the Insert tab and dialog box*
+
 *   **Summarizing Data:**
     *   Drag numerical fields to the `Values` area (defaults usually to `SUM`).
     *   Drag categorical fields (text, dates) to `Rows` or `Columns` to group data.
     *   Change the calculation type in the `Values` area (Right-click field > `Value Field Settings...` or Left-click > `Value Field Settings...`) - choose Sum, Count, Average, Max, Min, etc.
+
+    ![PivotTable Fields Pane](./Images/Lesson5/pivot_fields_pane.png)
+    *The PivotTable Fields pane showing fields dragged to different areas*
+
 *   **Modifying Pivot Tables:**
     *   Rearrange fields by dragging them between areas or within an area.
     *   Add or remove fields.
     *   Refresh the Pivot Table (`Data` tab > `Refresh All` or Right-click > `Refresh`) if the source data changes.
+
+    ![Modifying Pivot Tables](./Images/Lesson5/modify_pivot_table.png)
+    *Rearranging fields and refreshing the pivot table when source data changes*
+
 *   **Filtering, Sorting, and Grouping:**
     *   **Filtering:** Use the `Filters` area, or click the dropdown arrows on Row/Column labels.
     *   **Sorting:** Click the dropdown arrows on Row/Column labels and choose sort options (A-Z, Z-A, More Sort Options).
     *   **Grouping:** Select items (rows or columns), right-click > `Group`. Especially useful for dates (group by Year, Quarter, Month) or numerical ranges.
+
+    ![Filtering and Sorting](./Images/Lesson5/pivot_filtering_sorting.png)
+    *Filtering and sorting options in a Pivot Table*
+
+    ![Grouping Data](./Images/Lesson5/pivot_grouping.png)
+    *Grouping data in a Pivot Table, especially useful for dates*
 
 ### 2. Pivot Charts: Visualizing Pivot Table Data
 
@@ -50,11 +69,18 @@
     *   Select any cell within your Pivot Table.
     *   Go to the `PivotTable Analyze` tab (contextual tab) > `Tools` group > `PivotChart`.
     *   Choose the desired chart type (Column, Bar, Pie, Line, etc.).
+
+    ![Creating Pivot Charts](./Images/Lesson5/create_pivot_chart.png)
+    *Creating a Pivot Chart from an existing Pivot Table*
+
 *   **Formatting Pivot Charts:**
     *   Use the `Design` and `Format` contextual tabs that appear when the chart is selected.
     *   Add/remove chart elements (titles, labels, legend) using the `+` icon next to the chart.
     *   Apply chart styles and colors.
     *   Filter directly on the chart using the interactive field buttons.
+
+    ![Formatting Pivot Charts](./Images/Lesson5/format_pivot_chart.png)
+    *Formatting options for Pivot Charts to enhance visualization*
 
 ### 3. Interactive Dashboards Basics
 
@@ -64,11 +90,22 @@
     *   Go to `PivotTable Analyze` tab > `Filter` group > `Insert Slicer`.
     *   Choose the field(s) you want to filter by.
     *   Connect slicers to multiple Pivot Tables (Right-click slicer > `Report Connections...`).
+
+    ![Slicers](./Images/Lesson5/slicers.png)
+    *Using slicers to filter multiple pivot tables and charts simultaneously*
+
 *   **Timelines:** Special slicers specifically for filtering date fields.
     *   Select a Pivot Table with a date field.
     *   Go to `PivotTable Analyze` tab > `Filter` group > `Insert Timeline`.
     *   Choose the date field.
+
+    ![Timelines](./Images/Lesson5/timelines.png)
+    *Using a timeline to filter date-based data in pivot tables*
+
 *   **Arrangement:** Place Pivot Tables, Charts, Slicers, and Timelines logically on a worksheet to create a dashboard view.
+
+    ![Dashboard Layout](./Images/Lesson5/dashboard_layout.png)
+    *Example of a simple Excel dashboard using pivot tables, charts, slicers, and timelines*
 
 ---
 

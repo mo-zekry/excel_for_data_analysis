@@ -22,12 +22,23 @@
     *   🔧 **Quick Access Toolbar (QAT):** Customizable shortcuts for your favorite commands (Save, Undo, Redo).
     *   ∑ **Formula Bar:** View and edit data/formulas in the active cell.
     *   📍 **Name Box:** See the address (e.g., A1) of your selected cell.
+
+    ![Excel Interface Overview](./Images/Lesson1/excel_interface.png)
+    *The main components of the Excel interface labeled for easy identification*
+
 *   **Worksheets:** Manage the pages within your workbook:
     *   Learn to add (`+`), delete, rename (double-click), and switch between sheets.
+
+    ![Worksheet Navigation](./Images/Lesson1/worksheet_tabs.png)
+    *Working with worksheet tabs at the bottom of the Excel window*
+
 *   **Cells & Navigation:** Master movement within the grid:
     *   Understand Rows (numbered) & Columns (lettered).
     *   Select cells, ranges, rows, and columns.
     *   Navigate efficiently using mouse, arrow keys, and shortcuts (Ctrl + Arrows, Home, Ctrl + Home/End).
+
+    ![Cell Selection Techniques](./Images/Lesson1/cell_selection.png)
+    *Different methods of selecting cells, rows, and columns in Excel*
 
 ### 2. Workbook Management: Handling Your Files
 
@@ -37,26 +48,51 @@
     *   `Save`: Updates the current file.
     *   `Save As`: Creates a new copy, changes the name, or selects a different format (like `.xlsx` or `.csv`).
 
+    ![Workbook Management](./Images/Lesson1/workbook_management.png)
+    *Creating, saving, and opening Excel workbooks*
+
 ### 3. Cell Formatting: Making Data Look Good
 
 *   **Number Formats:** Display data appropriately:
     *   Use `General`, `Number`, `Currency`, `Accounting`, `Date`, `Time`, `Percentage`, etc.
     *   > **Note:** Formatting changes appearance, not the underlying value!
+
+    ![Number Formatting](./Images/Lesson1/number_formats.png)
+    *Examples of the same number value displayed in different number formats*
+
 *   **Text Formatting:** Style your text:
     *   Apply **Bold**, *Italics*, Underline, change Font (style, size, color).
+
+    ![Text Formatting](./Images/Lesson1/text_formatting.png)
+    *Text formatting options in the Home tab ribbon*
+
 *   **Alignment:** Position data within cells:
     *   Horizontal (Left, Center, Right) & Vertical (Top, Middle, Bottom).
     *   `Wrap Text`: Fit long text into a cell.
     *   `Merge & Center`: Combine cells for titles.
 
+    ![Cell Alignment](./Images/Lesson1/cell_alignment.png)
+    *Different cell alignment options and their effects*
+
 ### 4. Basic Spreadsheet Practices: Working with Data
 
 *   **Entering Data:** Type text, numbers, or dates into the active cell.
+
+    ![Data Entry](./Images/Lesson1/data_entry.png)
+    *Different types of data being entered into an Excel worksheet*
+
 *   **Editing Data:** Modify cell content (double-click, type over, use Formula Bar).
+
+    ![Editing Cell Content](./Images/Lesson1/editing_data.png)
+    *Different methods for editing cell content in Excel*
+
 *   **Copying & Pasting:** Duplicate data efficiently:
     *   Shortcuts: `Ctrl+C` (Copy), `Ctrl+V` (Paste).
     *   Ribbon/Right-click options.
     *   ✨ **Paste Special:** Paste only values, formatting, formulas, or transpose data.
+
+    ![Copy and Paste Methods](./Images/Lesson1/copy_paste.png)
+    *Different copy and paste options including Paste Special dialog*
 
 ---
 
