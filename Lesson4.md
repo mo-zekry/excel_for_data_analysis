@@ -120,28 +120,85 @@
 
 ---
 
-## 🛠️ Activity: Scenario-Based Exercises
+## 🛠️ Activities: Advanced Functions with Real Data
 
-* **Goal:** Apply advanced functions to solve practical data analysis problems.
-* **Setup:** You'll need two sheets:
+### Activity 1: Stock Data Analysis
 
-  1. `Sales Data`: Columns like `OrderID`, `ProductID`, `SaleDate`, `Region`, `Salesperson`, `Units`, `TotalSale`.
-  2. `Product Info`: Columns like `ProductID`, `ProductName`, `Category`, `UnitPrice`.
-
-  * (Populate these sheets with sample data, ensuring some matching `ProductID`s between sheets).
+* **Datasets:** `Amazon.csv`, `Apple.csv`, `Facebook.csv`, `Google.csv`, `Netflix.csv` (found in Dataset/Lesson4 folder)
+* **Goal:** Apply advanced functions to analyze stock performance data for major tech companies.
 * **Steps:**
+  1. 📂 **Create New Workbook:** Start a new Excel workbook for your stock analysis.
+  2. 📥 **Import Data:** Import each stock dataset into separate worksheets and name them accordingly (Amazon, Apple, Facebook, Google, Netflix).
+  3. 💾 **Save:** Save the workbook as `Tech_Stocks_Analysis.xlsx`.
+  4. 📊 **Create Summary Sheet:** Add a new sheet called "Summary" at the beginning of your workbook.
+  5. 📅 **Date Processing:** For each stock worksheet:
+     * Extract the year and month using `=YEAR(A2)` and `=MONTH(A2)` in adjacent columns
+     * Calculate the trading day number within each month using `DAY()` function
+  6. 💰 **Price Movement Analysis:** Add columns to calculate:
+     * Daily Change ($) = Close - Open
+     * Daily Change (%) = (Close - Open) / Open * 100
+     * High-Low Range = High - Low
+  7. 📈 **Lookup Monthly Performance:** In the Summary sheet, create a table with:
+     * Column A: Company names (Amazon, Apple, Facebook, Google, Netflix)
+     * Column B: Month (use data validation to create a dropdown for months 1-12)
+     * Column C: Year (use data validation for years in your dataset)
+     * Column D: Monthly Average Closing Price - use `AVERAGEIFS` to find average closing price for the selected month and year
+     * Formula example: `=AVERAGEIFS(Amazon!D:D, Amazon!$M:$M, B2, Amazon!$L:$L, C2)` where column M contains month values and column L contains year values
+  8. 📊 **Conditional Calculations:**
+     * Calculate how many days each stock had a positive price movement (Close > Open) using `COUNTIF`
+     * Calculate the total volume traded when the stock price increased using `SUMIF`
+     * Find the highest single-day trading volume for each company using `MAX`
+  9. 📆 **Date-Based Analysis:**
+     * Find the best and worst trading days for each company (highest and lowest Daily Change %)
+     * Use `INDEX` and `MATCH` to return the dates of these extreme values
+     * Formula example: `=INDEX(Amazon!A:A, MATCH(MAX(Amazon!N:N), Amazon!N:N, 0))` where column N contains Daily Change %
+  10. 🔍 **Cross-Stock Comparison:**
+     * Create a formula to identify which stock had the highest return in a specific month
+     * Use nested `IF` statements or `INDEX`/`MATCH` combinations to compare across stocks
 
-  1. **🛒 `VLOOKUP` - Get Product Name:** On the `Sales Data` sheet, add a new column `ProductName`. Use `VLOOKUP` to pull the `ProductName` from the `Product Info` sheet based on the `ProductID` in the `Sales Data` sheet. Remember to use `FALSE` for an exact match and make the `table_array` reference absolute if copying down. *Example: `=VLOOKUP(B2, 'Product Info'!$A$2:$D$10, 2, FALSE)`*
-  2. **📅 Date Calculations:** On the `Sales Data` sheet:
-     * Add a column `SaleYear` and use the `YEAR` function to extract the year from `SaleDate`.
-     * Add a column `DaysSinceSale` and use `TODAY()` and the `SaleDate` to calculate how many days have passed since each sale. *Example: `=TODAY()-C2`* (Format the result as a Number).
-     * *(Optional Challenge)* If you have an `OrderDate` and `ShipDate`, use `DATEDIF` to calculate the shipping time in days.
-  3. **📊 `SUMIF` - Regional Sales:** In a separate area or sheet, create a small summary table with unique Regions listed. Use `SUMIF` to calculate the `TotalSale` for each `Region` from the `Sales Data` sheet.
-  4. **👤 `COUNTIF` - Salesperson Orders:** In the summary area, use `COUNTIF` to count how many orders each `Salesperson` handled.
-  5. **📈 `SUMIFS` - Specific Product Sales by Region:** Calculate the total `TotalSale` for a *specific* `ProductName` (e.g., "Laptop") within *each* `Region`. You'll need `SUMIFS` because you have two criteria (ProductName and Region).
-  6. **🔢 `COUNTIFS` - High Value Orders by Salesperson:** Count how many orders *each* `Salesperson` had where the `TotalSale` was greater than a certain amount (e.g., $500). Use `COUNTIFS`.
-  7. **(Optional) `INDEX/MATCH`:** Repeat step 1 (Get Product Name) using `INDEX` and `MATCH` instead of `VLOOKUP`.
-     * *Hint:* `MATCH(B2, 'Product Info'!$A$2:$A$10, 0)` finds the row number. `INDEX('Product Info'!$B$2:$B$10, [result_of_MATCH])` gets the name.
-  8. 💾 **Save:** Save your workbook.
+### Activity 2: FIFA World Cup Data Analysis
+
+* **Datasets:** `WorldCupMatches.csv`, `WorldCupPlayers.csv`, `WorldCups.csv` (found in Dataset/Lesson4 folder)
+* **Goal:** Use advanced Excel functions to analyze FIFA World Cup historical data.
+* **Steps:**
+  1. 📥 **Import Data:** Import the three World Cup datasets into separate worksheets in a new workbook.
+  2. 💾 **Save:** Save the workbook as `FIFA_World_Cup_Analysis.xlsx`.
+  3. 📝 **Sheet Renaming:** Name the worksheets "Matches", "Players", and "Tournaments" respectively.
+  4. 📅 **Date Functions:** In the Matches worksheet:
+     * Convert the "Datetime" column to proper Excel date format
+     * Extract the Year, Month, Day, and Weekday using appropriate date functions
+     * Create a column showing how many days elapsed between consecutive World Cup matches
+  5. 🔍 **VLOOKUP Integration:** Create a new column in the Matches worksheet that displays the full tournament name by looking up the Year in the Tournaments worksheet.
+     * Formula example: `=VLOOKUP(YEAR(C2), Tournaments!$A$2:$B$22, 2, FALSE)` where column A contains Year and column B contains Tournament name
+  6. 📊 **Conditional Counting:** Create a summary table that shows:
+     * Number of matches played in each stage (Group, Round of 16, Quarter-finals, etc.) using `COUNTIF`
+     * Number of matches with more than 3 goals total using `COUNTIFS`
+     * Number of matches where the home team won, drew, or lost using conditional functions
+  7. 🌟 **Player-Match Integration:** In the Players worksheet:
+     * Use `VLOOKUP` or `INDEX/MATCH` to add the match date and stage for each player appearance by referencing the MatchID in the Matches sheet
+     * Create a new column showing if the player's team won, drew or lost that match
+  8. 🏆 **Tournament Statistics:** In the Tournaments worksheet:
+     * Calculate the average goals per game for each tournament using `AVERAGEIFS` on the Matches worksheet
+     * Find which World Cup had the highest scoring final match using `MAX` and lookup functions
+     * Create an "Attendance Efficiency" column that divides the Attendance by the number of matches
+  9. 🔢 **INDEX/MATCH Mastery:** Create a dynamic lookup system where the user can:
+     * Select a country from a dropdown list
+     * View that country's World Cup history (appearances, matches played, goals scored, etc.)
+     * Use a combination of `INDEX`, `MATCH`, and conditional functions for this complex lookup
+  10. 📈 **Advanced Multi-Criteria Analysis:**
+      * Calculate how many goals were scored by home teams vs. away teams in each tournament
+      * Determine which stadium hosted the most matches in World Cup history
+      * Find the player with the most appearances across all World Cups
+
+### Bonus Challenge: Cross-Dataset Dashboard
+
+* Create a new sheet called "Dashboard"
+* Design a dynamic report where users can select a year/tournament and see key statistics including:
+  * Tournament winner, runner-up and third place
+  * Top goal scorer(s) from that tournament
+  * Highest and lowest scoring matches
+  * Average goals per match compared to other tournaments
+* Use a combination of `VLOOKUP`, `INDEX/MATCH`, and conditional functions to make this dashboard interactive
+* Add data validation to create dropdown menus for selecting different tournaments
 
 ---

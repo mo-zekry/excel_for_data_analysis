@@ -13,7 +13,7 @@ Our course consists of 9 progressive lessons that build on each other:
 1. **Getting Started with Excel** - Excel interface, basic functionality, cell formatting
 2. **Data Importing and Preparation** - Importing data from various sources, data cleaning
 3. **Excel Formulas and Functions Basics** - Creating formulas, referencing cells, basic functions
-4. **Advanced Excel Functions for Analysis** - VLOOKUP, XLOOKUP, date functions, conditional logic 
+4. **Advanced Excel Functions for Analysis** - VLOOKUP, XLOOKUP, date functions, conditional logic
 5. **Excel Pivot Tables and Pivot Charts** - Data summarization and exploration techniques
 6. **Data Visualization and Dashboards** - Charts, conditional formatting, interactive dashboards
 7. **Excel Data Analysis Tools** - Statistical tools, what-if analysis, regression

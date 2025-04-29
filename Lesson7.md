@@ -95,49 +95,105 @@
 
 ---
 
-## 🛠️ Activity: Applying Analysis Tools
+## 🛠️ Activities: Data Analysis with Real-World Datasets
 
-* **Goal:** Use Goal Seek and the Analysis ToolPak on a simple dataset.
-* **Setup:** Create a small dataset. Examples:
-  * **Sheet1 (Profit Calc):**
-    * `A1`: Units Sold, `B1`: 100
-    * `A2`: Price Per Unit, `B2`: $15
-    * `A3`: Fixed Costs, `B3`: $500
-    * `A4`: Variable Cost Per Unit, `B4`: $8
-    * `A5`: Total Revenue, `B5`: `=B1*B2`
-    * `A6`: Total Variable Costs, `B6`: `=B1*B4`
-    * `A7`: Total Costs, `B7`: `=B3+B6`
-    * `A8`: Profit, `B8`: `=B5-B7`
-  * **Sheet2 (Sample Data):**
-    * Column A (`X`): 10, 12, 15, 11, 18, 20, 14, 16
-    * Column B (`Y`): 25, 30, 35, 28, 40, 45, 32, 38
+### Activity 1: Adult Census Income Analysis
+
+* **Dataset:** `adult.csv` (found in Dataset/Lesson7 folder)
+* **Goal:** Use Excel's statistical tools to analyze factors influencing income levels in the adult census dataset.
+* **Background:** This dataset contains demographic information and predicts whether income exceeds $50K/year.
 * **Steps:**
-  1. **🎯 Goal Seek - Break-Even Analysis:**
-     * Go to `Sheet1`.
-     * Open `Data` > `What-If Analysis` > `Goal Seek`.
-     * `Set cell`: `B8` (the Profit cell).
-     * `To value`: `0` (for break-even).
-     * `By changing cell`: `B1` (Units Sold).
-     * Click `OK`. Observe the number of units required in cell `B1` to achieve zero profit.
-     * *(Optional)* Click `Cancel` to revert, or `OK` to keep the result.
-  2. **📊 Analysis ToolPak - Descriptive Statistics:**
-     * Ensure the Analysis ToolPak is enabled (`File` > `Options` > `Add-ins`...).
-     * Go to `Sheet2`.
-     * Go to `Data` > `Data Analysis`.
-     * Select `Descriptive Statistics` and click `OK`.
-     * `Input Range`: Select the data in Column A (`$A$1:$A$9` or similar, adjust if you have headers).
-     * Check `Labels in first row` if your selection includes a header.
-     * `Output Range`: Choose an empty cell on the sheet (e.g., `D1`).
-     * Check `Summary statistics`.
-     * Click `OK`. Review the generated statistics (Mean, Median, Standard Deviation, etc.).
-  3. **⚡️ Analysis ToolPak - Correlation:**
-     * Go to `Data` > `Data Analysis`.
-     * Select `Correlation` and click `OK`.
-     * `Input Range`: Select the data in *both* Column A and Column B (`$A$1:$B$9` or similar).
-     * Check `Labels in first row` if applicable.
-     * `Output Range`: Choose another empty cell (e.g., `G1`).
-     * Click `OK`. Review the correlation matrix (it will show the correlation coefficient between X and Y).
-  4. **(Optional) Scenario Manager:** On `Sheet1`, use Scenario Manager to create two scenarios: "Low Sales" (Units Sold = 50) and "High Sales" (Units Sold = 200). Generate a Scenario Summary report.
-  5. 💾 **Save:** Save your workbook.
+  1. 📥 **Import Data:** Import the `adult.csv` file into a new Excel workbook.
+  2. 💾 **Save:** Save the workbook as `Adult_Census_Analysis.xlsx`.
+  3. 📊 **Enabling Analysis ToolPak:**
+     * Go to File > Options > Add-ins
+     * At the bottom, select "Excel Add-ins" in the Manage dropdown and click Go
+     * Check "Analysis ToolPak" and click OK
+  4. 🧮 **Create Income Summary:**
+     * Create a Pivot Table to summarize the count of records by income category (>50K and <=50K)
+     * Calculate the percentage distribution of income categories
+     * Create a pie chart to visualize this distribution
+  5. 📈 **Age Distribution Analysis:**
+     * Go to Data > Data Analysis > Histogram
+     * Select the age column as input range
+     * Create age bins (e.g., 10-year spans: 20, 30, 40, 50, 60, 70, 80, 90)
+     * Check "Chart Output" to create a histogram
+     * Compare age distributions between high and low income groups
+  6. 📊 **Education Analysis:**
+     * Create a Pivot Table showing the relationship between education level and income
+     * Calculate the percentage of individuals with income >50K for each education level
+     * Create a column chart to visualize how education level correlates with higher income
+  7. 🔢 **Descriptive Statistics:**
+     * Go to Data > Data Analysis > Descriptive Statistics
+     * Generate summary statistics for continuous variables (age, education-num, hours-per-week)
+     * Split the analysis by income category to compare different income groups
+  8. ⚡ **Correlation Analysis:**
+     * Go to Data > Data Analysis > Correlation
+     * Select all numerical variables (age, education-num, hours-per-week, capital-gain, capital-loss)
+     * View the correlation matrix to identify relationships between variables
+     * Use conditional formatting to highlight strong correlations
+  9. 🎯 **Goal Seek Analysis:**
+     * Create a simple model that predicts income based on education years and hours worked
+     * Use Goal Seek to determine:
+       * How many years of education would be needed to reach a specific income threshold
+       * How many hours per week would be required to achieve a certain income level
+  10. 📋 **Scenario Manager:**
+      * Set up different scenarios for career paths based on education, occupation, and hours-per-week
+      * Create scenarios like "Minimum Education," "Advanced Education," and "Workaholic"
+      * Generate a scenario summary to compare outcomes across these different life choices
+
+### Activity 2: Breast Cancer Wisconsin Diagnostic Analysis
+
+* **Dataset:** `breast_cancer.csv` (found in Dataset/Lesson7 folder)
+* **Goal:** Apply Excel's statistical tools to analyze diagnostic measurements and their relationship to cancer diagnosis.
+* **Background:** This dataset contains features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing cell nuclei characteristics.
+* **Steps:**
+  1. 📥 **Import Data:** Import the `breast_cancer.csv` file into Excel.
+  2. 💾 **Save:** Save the workbook as `Breast_Cancer_Analysis.xlsx`.
+  3. 🧹 **Data Preparation:**
+     * Review the dataset structure to understand the variables
+     * The "diagnosis" column contains M (malignant) or B (benign) outcomes
+     * The remaining columns contain various measurements of cell nuclei features
+  4. 📊 **Diagnosis Distribution:**
+     * Create a Pivot Table to count benign vs. malignant cases
+     * Create a pie chart showing the distribution of diagnoses
+     * Calculate the percentage of malignant vs. benign cases
+  5. 🔢 **Descriptive Statistics by Diagnosis:**
+     * Go to Data > Data Analysis > Descriptive Statistics
+     * Generate separate summary statistics for each feature, split by diagnosis (M vs. B)
+     * Create a comparison table showing how feature means differ between malignant and benign cases
+  6. 📈 **Feature Histograms:**
+     * Use the Histogram tool to create frequency distributions for key features
+     * Create separate histograms for malignant and benign cases for comparison
+     * Focus on features like radius_mean, texture_mean, perimeter_mean, area_mean, and smoothness_mean
+  7. ⚡ **Correlation Analysis:**
+     * Use the Correlation tool to identify which features are most strongly correlated with each other
+     * Create a heatmap using conditional formatting to visualize the correlation matrix
+     * Identify groups of highly correlated features that might be redundant
+  8. 🔍 **Feature Importance Analysis:**
+     * Calculate the standardized difference between mean values for M and B groups for each feature
+     * Rank features by their ability to differentiate between malignant and benign cases
+     * Create a bar chart showing the most discriminative features
+  9. 📊 **Scatter Plot Matrix:**
+     * Create scatter plots for pairs of the most important features
+     * Color-code points by diagnosis (malignant vs. benign)
+     * Identify visual patterns that help separate the diagnostic groups
+  10. 🎯 **Simple Prediction Model:**
+      * Create a simple scoring formula using 3-5 of the most important features
+      * Use Goal Seek to find threshold values for these features that best separate malignant from benign cases
+      * Calculate the accuracy of your simple model by comparing its predictions to actual diagnoses
+
+### Bonus Challenge: Advanced Analysis Techniques
+
+* **Statistical Hypothesis Testing:**
+  * Use the t-Test and z-Test tools from the Analysis ToolPak to compare feature means between diagnostic groups
+  * Perform ANOVA analysis to evaluate differences across multiple groups or features
+  * Report p-values and interpret statistical significance
+
+* **Prediction Model Development:**
+  * Create a more sophisticated scoring model using weighted combinations of features
+  * Use Scenario Manager to test different weighting schemes
+  * Calculate sensitivity (true positive rate) and specificity (true negative rate) for your model
+  * Create a ROC curve approximation to evaluate model performance
 
 ---

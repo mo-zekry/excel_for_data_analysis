@@ -129,26 +129,96 @@
 
 ---
 
-## 🛠️ Activity: Creating an Interactive Dashboard
+## 🛠️ Activities: Data Visualization with Real Datasets
 
-* **Goal:** Build a simple interactive dashboard using charts, Pivot Tables, and slicers.
-* **Setup:** Use the `Sales Data` and potentially the `Product Info` sheets from previous lessons. Ensure you have Pivot Tables created (like Sales by Region, Sales by Category, Sales over Time).
+### Activity 1: Wine Quality Analysis Dashboard
+
+* **Datasets:** `winequality-red.csv` and `winequality-white.csv` (found in Dataset/Lesson6 folder)
+* **Goal:** Create a comprehensive dashboard comparing red and white wine characteristics and their quality ratings.
 * **Steps:**
-  1. **Prepare Analysis:** Ensure you have at least 2-3 Pivot Tables summarizing key aspects of your data (e.g., Total Sales by Region, Total Sales by Category, Units Sold by Salesperson, Sales Trend by Month).
-  2. **Create Visuals:**
-     * Create appropriate Pivot Charts for each of your key Pivot Tables (e.g., Bar chart for Region Sales, Pie chart for Category Sales, Line chart for Sales Trend).
-     * *(Optional)* Create a standard chart (not Pivot) based on a small summary table derived from a Pivot Table or formulas (e.g., a card showing Total Overall Sales).
-  3. **Design Dashboard Sheet:** Create a new, blank worksheet named `Dashboard`.
-  4. **Move/Copy Elements:** Move or copy your created charts onto the `Dashboard` sheet. Arrange them logically.\ (Tip: Cut (`Ctrl+X`) and Paste (`Ctrl+V`) moves charts easily).
-  5. **Add Interactivity:**
-     * Select one of the Pivot Tables that a chart on your dashboard is based on.
-     * Insert `Slicers` for key dimensions you want to filter by (e.g., `Region`, `Salesperson`, `Year` if applicable).
-     * Insert a `Timeline` if you have a `Date` field.
-     * Move the Slicers/Timeline to the `Dashboard` sheet and arrange them (often at the top or side).
-  6. **Connect Slicers/Timeline:** For *each* Slicer and Timeline, right-click > `Report Connections...` and ensure it is connected to *all* the relevant Pivot Tables that feed into your dashboard charts.
-  7. **Apply Conditional Formatting (Example):** Go back to your main `Sales Data` sheet. Select the `TotalSale` column. Apply `Conditional Formatting` > `Data Bars` (choose a style). Observe how it adds visual context to the raw data.
-  8. **Test Interactivity:** Click various options on your Slicers and Timeline. Watch how all connected charts update dynamically.
-  9. **Refine Layout:** Adjust chart sizes, positions, and formatting for clarity and visual appeal. Hide gridlines (`View` tab > `Show` group > uncheck `Gridlines`) for a cleaner look.
-  10. 💾 **Save:** Save your workbook.
+  1. 📥 **Import Data:** Import both wine quality datasets into separate worksheets in a new workbook.
+  2. 💾 **Save:** Save the workbook as `Wine_Quality_Dashboard.xlsx`.
+  3. 📊 **Prepare Summary Tables:**
+     * Create a worksheet named "Analysis" where you'll prepare summary statistics for both wine types
+     * Calculate min, max, average, and median for key properties (alcohol content, acidity, sugar, etc.)
+     * Create a combined dataset with a "Type" column (Red/White) for some of the visualizations
+  4. 📈 **Quality Distribution Chart:**
+     * Create a histogram for quality ratings for both red and white wine
+     * Place them side by side for easy comparison
+     * Add appropriate titles and axis labels
+  5. 📊 **Alcohol Content vs. Quality:**
+     * Create a scatter plot showing the relationship between alcohol content (x-axis) and quality rating (y-axis)
+     * Use different colors for red and white wine data points
+     * Add a trendline to visualize correlation
+  6. 🧪 **Chemical Properties Comparison:**
+     * Create a radar chart comparing the average values of key chemical properties (acidity, pH, density, etc.) between red and white wines
+     * Scale the values appropriately so all properties can be meaningfully compared
+  7. 🔍 **Quality Factor Analysis:**
+     * Create a multiple bar chart showing the average values of each property for different quality ratings
+     * This helps identify which factors most strongly correlate with higher quality
+  8. 📊 **Conditional Formatting Heatmap:**
+     * Create a correlation matrix between all wine properties
+     * Apply color scale conditional formatting to highlight strong positive and negative correlations
+  9. 🔮 **Interactive Dashboard:**
+     * Create a new worksheet named "Dashboard"
+     * Arrange the most insightful charts on this sheet
+     * Add slicers for quality rating and wine type
+     * Create a dynamic title that updates based on slicer selections
+  10. 🎨 **Dashboard Design:**
+      * Apply a consistent color scheme (perhaps using wine-related colors)
+      * Add text boxes with key insights discovered from your analysis
+      * Format all charts with clear titles and labels
+      * Consider adding a small image of wine glasses for visual appeal
+
+### Activity 2: NYC Airbnb Visualization Project
+
+* **Dataset:** `AB_NYC_2019.csv` (found in Dataset/Lesson6 folder)
+* **Goal:** Create an interactive dashboard to visualize Airbnb rental patterns across New York City neighborhoods.
+* **Steps:**
+  1. 📥 **Import Data:** Import the NYC Airbnb dataset into a new Excel workbook.
+  2. 💾 **Save:** Save the workbook as `NYC_Airbnb_Visualization.xlsx`.
+  3. 🧹 **Data Preparation:**
+     * Create a pivot table to summarize key metrics by neighborhood and room type
+     * Calculate average price, availability, and number of reviews
+     * Create a calculated field for review frequency (number of reviews divided by calculated age of listing)
+  4. 🗺️ **Neighborhood Price Comparison:**
+     * Create a column chart showing average prices by neighborhood
+     * Use conditional formatting with color gradient to highlight the most expensive areas
+     * Sort neighborhoods from highest to lowest average price
+  5. 📊 **Room Type Distribution:**
+     * Create a pie chart showing the distribution of room types (Entire home/apt, Private room, Shared room)
+     * Create a second chart showing how this distribution varies across different neighborhoods or boroughs
+  6. 📈 **Price Range Analysis:**
+     * Create a histogram showing the distribution of prices across the entire dataset
+     * Add reference lines or color coding to indicate different price brackets (budget, mid-range, luxury)
+  7. 🔍 **Availability Patterns:**
+     * Create a scatter plot with price on the y-axis and availability_365 on the x-axis
+     * Use different colors to represent different neighborhoods or boroughs
+     * Add a trendline to see if there's a relationship between price and availability
+  8. 📊 **Review Analysis:**
+     * Create a line chart showing the relationship between number of reviews and listing age
+     * Create a bubble chart where bubble size represents the number of reviews and position represents price and minimum nights
+  9. 🎛️ **Interactive Dashboard:**
+     * Create a new worksheet named "NYC Airbnb Dashboard"
+     * Arrange the most insightful charts in a logical layout
+     * Add slicers for neighborhood group (borough), room type, and price range
+     * Add a timeline slicer if you've calculated or extracted posting dates
+  10. 🏙️ **Final Touches:**
+      * Create a summary statistics section showing:
+        * Total number of listings
+        * Average price
+        * Most common room type
+        * Most reviewed neighborhood
+      * Apply consistent formatting across all charts
+      * Add explanatory text boxes highlighting key insights
+      * Create a dynamic title that updates based on slicer selections
+
+### Bonus Challenge: Advanced Visualization Techniques
+
+* Create a dynamic map visualization of NYC neighborhoods using Excel's 3D Maps feature
+* Build an automatic price prediction calculator using trendline equations from your scatter plots
+* Create animated charts that show how Airbnb listings have evolved over time (if the dataset includes historical data)
+* Design a custom color palette that matches Airbnb's branding and apply it consistently across all visualizations
+* Add form controls (buttons, checkboxes) to toggle between different visualization views
 
 ---

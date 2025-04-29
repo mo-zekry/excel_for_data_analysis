@@ -94,7 +94,87 @@
 
 ---
 
-## 🗣️ Activity: Open Q&A and Discussion
+## 🛠️ Comprehensive Review Activities
+
+### Activity 1: Skills Assessment Challenge
+
+* **Goal:** Demonstrate proficiency in key Excel skills learned throughout the course.
+* **Format:** A series of targeted exercises requiring specific Excel skills.
+* **Instructions:** Complete each of the following tasks using the most appropriate skills and techniques:
+
+1. **Data Import & Cleaning: Titanic Dataset Revisited**
+   * Import the `Titanic.xlsx` file (Dataset/Lesson2 folder)
+   * Identify and handle missing values in the Age column using an appropriate method
+   * Create a new categorical column "Age Group" with the following categories:
+     * Child (0-12)
+     * Teenager (13-19)
+     * Adult (20-64)
+     * Senior (65+)
+   * Use Text-to-Columns to separate the Name column into Title (Mr., Mrs., etc.) and Full Name
+
+2. **Formulas & Functions: World Happiness Analysis**
+   * Open the World Happiness Report files (2015.csv to 2019.csv in Dataset/Lesson3 folder)
+   * Use AVERAGE and STDEV functions to calculate the mean and standard deviation of happiness scores for each year
+   * Create a lookup table that allows you to find a specific country's happiness rank in any selected year
+   * Use IF functions to classify countries as "Very Happy," "Happy," "Average," or "Below Average"
+
+3. **Advanced Functions: Stock Performance Comparison**
+   * Using the stock data files (Dataset/Lesson4 folder)
+   * Create a formula using INDEX and MATCH to compare the performance of any two tech companies on any given date
+   * Calculate the 7-day moving average of closing prices for each stock
+   * Use MAXIFS or SUMIFS to identify the highest trading volume periods
+
+4. **Pivot Tables & Charts: Superstore Profitability**
+   * Using the `SuperStoreUS-2015.xlsx` file (Dataset/Lesson5 folder)
+   * Create a Pivot Table showing profit by region and category
+   * Add a calculated field to the Pivot Table that shows profit margin percentage
+   * Create a Pivot Chart visualizing the results
+   * Add appropriate slicers for interactive filtering
+
+5. **Data Visualization: Wine Quality Comparison**
+   * Using the wine quality datasets (Dataset/Lesson6 folder)
+   * Create a multiple scatter plot comparing alcohol content vs. quality for both red and white wines
+   * Apply appropriate formatting, legends, and labels
+   * Add trendlines to identify correlations
+   * Format the chart with a professional color scheme
+
+6. **Analysis Tools: Census Data Insights**
+   * Using the `adult.csv` file (Dataset/Lesson7 folder)
+   * Apply the Analysis ToolPak to generate descriptive statistics
+   * Create a histogram showing the distribution of ages
+   * Use Goal Seek to determine what education level would be needed to reach a specific income threshold
+
+### Activity 2: Integrated Dashboard Challenge
+
+* **Goal:** Create a review dashboard that integrates multiple datasets from the course.
+* **Instructions:** Choose any 3 datasets from different lessons and build an integrated dashboard that:
+  * Shows key metrics from each dataset
+  * Includes at least 4 different chart types
+  * Features interactive elements (slicers, timelines, etc.)
+  * Has a professional design with consistent formatting
+  * Contains a summary of insights discovered
+
+### Activity 3: Personalized Review Worksheet
+
+* **Goal:** Create a personalized reference sheet for future use.
+* **Instructions:** Create an Excel workbook with the following worksheets:
+  1. **Function Reference:** List all Excel functions covered in the course with examples of how to use them
+  2. **Visualization Guide:** Include examples of different chart types and when to use them
+  3. **Shortcut Keys:** Document the most useful Excel keyboard shortcuts
+  4. **Personal Notes:** Add your own notes on challenging concepts or areas you want to practice more
+  5. **Resources:** Compile links to helpful Excel resources, tutorials, and practice datasets
+
+### Activity 4: Practical Application Planning
+
+* **Goal:** Plan how to apply Excel skills to a real-world scenario.
+* **Instructions:** Choose one of the following scenarios and outline how you would approach it:
+  1. **Personal Finance Analysis:** How would you use Excel to track and analyze personal expenses?
+  2. **Small Business Dashboard:** Design a sales tracking dashboard for a small retail business
+  3. **Project Management Tracker:** Create a template for tracking project tasks, timeline, and budget
+  4. **Academic Performance Analysis:** Design a system to track and visualize student performance data
+  5. **Custom Scenario:** Outline how you would apply Excel skills to a specific work or personal project
+
+## 🗣️ Open Q&A and Discussion
 
 * **Goal:** Solidify understanding and address any remaining questions.
 * **Format:** Interactive session driven by student questions.
@@ -102,4 +182,14 @@
   * Instructor provides answers, demonstrations (if needed), and facilitates discussion.
   * Share links or names of recommended resources.
 
----
+### Popular Topics for Q&A:
+
+* Troubleshooting formula errors
+* Excel performance optimization for large datasets
+* Advanced Pivot Table techniques
+* Custom formatting tricks
+* Excel vs. other data analysis tools (when to use what)
+* Career applications of Excel skills
+* Upcoming features in newer Excel versions
+* Excel in data science workflows
+* Automating routine tasks

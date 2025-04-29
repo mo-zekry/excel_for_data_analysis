@@ -37,7 +37,7 @@
 
 1. **Analysis ToolPak** (required for Lesson 7)
    - Excel > File > Options > Add-ins > Go > Check "Analysis ToolPak"
-   
+
 2. **Solver Add-in** (used in later exercises)
    - Excel > File > Options > Add-ins > Go > Check "Solver Add-in"
 

@@ -116,38 +116,118 @@
 
 ---
 
-## 🛠️ Activity: Analyzing Sales Data with Pivots
+## 🛠️ Activities: Pivot Tables with Real Datasets
 
-* **Goal:** Use Pivot Tables and Pivot Charts to analyze sales trends from a dataset.
-* **Setup:** Use the `Sales Data` sheet created/used in Lesson 4 (or a similar dataset with columns like `SaleDate`, `Region`, `Category`, `Salesperson`, `TotalSale`). Ensure the data is clean and formatted appropriately (especially dates).
+### Activity 1: Bank Marketing Campaign Analysis
+
+* **Dataset:** `bank-additional-full.csv` (found in Dataset/Lesson5 folder)
+* **Goal:** Use Pivot Tables and Pivot Charts to analyze bank marketing campaign effectiveness.
+* **Background:** This dataset contains information about a bank's direct marketing campaigns (phone calls). The classification goal is to predict if the client will subscribe to a term deposit.
 * **Steps:**
-  1. **📊 Create Pivot Table 1 (Sales by Region):**
-     * Create a Pivot Table from the `Sales Data`.
-     * Place `Region` in the `Rows` area.
-     * Place `TotalSale` in the `Values` area (ensure it's `Sum of TotalSale`).
-     * Format the `TotalSale` values as Currency.
-  2. **📈 Create Pivot Chart 1:**
-     * With Pivot Table 1 selected, insert a `PivotChart` (e.g., a Clustered Column or Bar chart).
-     * Add a meaningful chart title (e.g., "Total Sales by Region").
-  3. **📅 Create Pivot Table 2 (Sales by Month/Year):**
-     * Create a *second* Pivot Table from the *same* `Sales Data` on the same sheet (or a new one).
-     * Place `SaleDate` in the `Rows` area. Excel will likely automatically group it by Years, Quarters, and Months. (If not, right-click the dates > `Group` > Choose Years and Months).
-     * Place `TotalSale` in the `Values` area (`Sum of TotalSale`, formatted as Currency).
-  4. **📉 Create Pivot Chart 2:**
-     * With Pivot Table 2 selected, insert a `PivotChart` (e.g., a Line chart is good for time trends).
-     * Add a title (e.g., "Sales Trend Over Time").
-  5. **🔪 Insert Slicers:**
-     * Select Pivot Table 1.
-     * Insert a `Slicer` for `Category`.
-     * Insert a `Slicer` for `Salesperson`.
-  6. **🔗 Connect Slicers:**
-     * Right-click the `Category` slicer > `Report Connections...` > Check the boxes for *both* PivotTable1 and PivotTable2.
-     * Repeat for the `Salesperson` slicer.
-  7. **🖱️ Interact:**
-     * Arrange the Pivot Charts and Slicers on the sheet to create a simple dashboard layout.
-     * Click different categories or salespeople on the slicers and observe how *both* Pivot Tables and *both* Pivot Charts update instantly.
-  8. **(Optional) Grouping:** In Pivot Table 1, try grouping Regions if applicable (e.g., group states into larger territories).
-  9. **(Optional) Filtering:** Apply a filter directly within one of the Pivot Tables (e.g., filter Pivot Table 2 to show only a specific year) and see how its corresponding chart updates.
-  10. 💾 **Save:** Save your workbook.
+  1. 📥 **Import Data:** Import the `bank-additional-full.csv` file into Excel.
+  2. 💾 **Save:** Save the workbook as `Bank_Marketing_Analysis.xlsx`.
+  3. 📊 **Create First Pivot Table (Campaign Outcomes):**
+     * Insert a Pivot Table in a new worksheet named "Campaign Results"
+     * Place `y` (outcome - did the client subscribe to a term deposit?) in `Rows` area
+     * Place `y` in `Values` area as well (it will default to "Count of y")
+     * Right-click on the count values and select "Show Values As" > "% of Grand Total"
+     * This shows the success rate of the marketing campaign
+  4. 📈 **Create First Pivot Chart:**
+     * With the pivot table selected, insert a Pie Chart
+     * Format with appropriate titles and labels
+     * This visualizes the campaign success rate
+  5. 🧮 **Create Second Pivot Table (Demographics Analysis):**
+     * Insert another Pivot Table in a new worksheet named "Demographics Analysis"
+     * Place `age` in `Rows` area
+     * Right-click on age values and select "Group..." to create meaningful age brackets (e.g., 10-year spans)
+     * Place `job` in `Columns` area
+     * Place `y` in `Values` area (keep as count)
+     * Right-click on the values and select "Show Values As" > "% of Row Total"
+  6. 📊 **Add Second Pivot Chart:**
+     * Create a Column Chart from this pivot table
+     * This shows which job categories within each age group are most likely to subscribe
+  7. 📅 **Create Third Pivot Table (Campaign Timing):**
+     * Insert another Pivot Table in a new worksheet named "Campaign Timing"
+     * Place `month` in `Rows` area
+     * Place `day_of_week` in `Columns` area
+     * Place `y` in `Values` area where y="yes"
+     * Add `duration` to `Values` area as "Average of duration"
+     * Format duration as number with no decimal places
+  8. 📉 **Add Third Pivot Chart:**
+     * Create a Heat Map-style visualization using Conditional Formatting
+     * Apply color scales to the pivot table to highlight the best days/months for successful calls
+  9. 🔪 **Create Dashboard:**
+     * Insert a new worksheet named "Dashboard"
+     * Create a copy of each pivot chart on this sheet (copy and paste as image)
+     * Insert slicers for `education`, `marital`, and `loan`
+     * Connect slicers to all pivot tables
+  10. 🔎 **Analyze and Summarize:**
+      * Use your pivot tables and charts to determine:
+      * Which demographic groups are most likely to subscribe?
+      * When is the best time to conduct marketing campaigns?
+      * What other factors influence campaign success?
+
+### Activity 2: Superstore Sales Analysis
+
+* **Dataset:** `SuperStoreUS-2015.xlsx` (found in Dataset/Lesson5 folder)
+* **Goal:** Create an interactive sales dashboard using Pivot Tables, Charts, and Slicers.
+* **Steps:**
+  1. 📂 **Open File:** Open the `SuperStoreUS-2015.xlsx` file.
+  2. 💾 **Save As:** Save as `Superstore_Dashboard.xlsx`.
+  3. 📊 **Create Sales by Category Pivot Table:**
+     * Insert a Pivot Table in a new worksheet named "Category Analysis"
+     * Place `Category` in `Rows` area
+     * Add `Sub-Category` under `Category` to create a hierarchy
+     * Place `Sales` in `Values` area (Sum of Sales)
+     * Format sales as Currency
+     * Also add `Profit` to `Values` area and format as Currency
+  4. 📈 **Create Category Sales Chart:**
+     * With the pivot table selected, insert a Clustered Bar Chart
+     * Show only the top level (Categories) initially
+     * Format with appropriate titles and labels
+  5. 🗺️ **Create Regional Sales Pivot Table:**
+     * Insert another Pivot Table in a new worksheet named "Regional Analysis"
+     * Place `Region` in `Rows` area
+     * Add `State` under `Region` to create a hierarchy
+     * Place `Sales` in `Values` area
+     * Add a calculated field for "Profit Ratio" (Profit ÷ Sales) - format as percentage
+  6. 🌍 **Create Regional Chart:**
+     * Create a Map chart showing sales by state
+     * If Excel's map chart doesn't work well, use a regular column chart for regions
+  7. 📅 **Create Time Analysis Pivot Table:**
+     * Insert another Pivot Table in a new worksheet named "Time Analysis"
+     * Place `Order Date` in `Rows` area and group by Years and Quarters
+     * Place `Sales` and `Profit` in `Values` area
+     * Format appropriately
+  8. 📉 **Create Time Series Chart:**
+     * Create a Line Chart showing Sales and Profit trends over time
+     * Format with appropriate titles and gridlines
+  9. 📊 **Create Customer Segment Pivot Table:**
+     * Create one more Pivot Table in a worksheet named "Customer Analysis"
+     * Place `Segment` in `Rows` area
+     * Place `Customer Name` in `Values` area as "Count of Customer Name"
+     * Add `Sales` to `Values` area
+     * Calculate "Average Sale per Customer" by dividing total sales by customer count
+  10. 🔠 **Create Master Dashboard:**
+      * Create a new worksheet named "Sales Dashboard"
+      * Copy the most important charts to this dashboard
+      * Insert slicers for:
+        * Category/Sub-Category
+        * Region
+        * Year (using a Timeline)
+        * Segment
+      * Connect all slicers to all pivot tables
+      * Arrange elements in a visually appealing layout
+      * Add a title and brief instructions for using the dashboard
+
+### Bonus Challenge: Advanced Pivot Analysis
+
+* Create a "Profitability Analysis" worksheet
+* Build a pivot table that uses calculated fields to determine:
+  * Profit margin percentage by product
+  * Return on investment (if shipping cost is considered an investment)
+  * Year-over-year growth rates
+* Create a dynamic top/bottom performer report using pivot table filtering options
+* Build a forecast pivot chart that projects sales for the next two quarters based on existing trends
 
 ---

@@ -101,21 +101,48 @@
 
 ---
 
-## 🛠️ Activity: Your First Spreadsheet
+## 🛠️ Activities: Working with Real Datasets
 
-* **Goal:** Create and format a simple data table.
+### Activity 1: Amazon Bestselling Books Analysis
+
+* **Dataset:** `bestsellers with categories.csv` (found in Dataset/Lesson1 folder)
+* **Goal:** Import and format a CSV file of Amazon bestselling books.
 * **Steps:**
-  1. 🚀 **Launch Excel:** Create a new, blank workbook.
-  2. 💾 **Save:** Save the file as `MyFirstSpreadsheet.xlsx`.
-  3. 📝 **Rename Sheet:** Change `Sheet1` to `Practice Data`.
-  4. 🏗️ **Build Table:** In cell `A1`, type `Item Name`. In `B1`, type `Quantity`. In `C1`, type `Price`. In `D1`, type `Total Cost`.
-  5. ✍️ **Enter Data:** Add 3-5 rows of sample data below the headers.
-     * *Example Row:* Item Name: `Apples`, Quantity: `10`, Price: `0.5`
-  6. 💲 **Format Numbers:** Select the `Price` column data and apply the `Currency` format. (Leave `Total Cost` for later lessons).
-  7. 🎨 **Format Headers:** Select row 1 (A1:D1). Apply **Bold** formatting and choose a light background fill color (Home tab > Font group).
-  8. ↔️ **Align Data:** Select the `Quantity` column data (B2 downwards) and apply `Center` alignment (Home tab > Alignment group).
-  9. 📋 **Copy/Paste:** Copy one entire row of your data and paste it below the existing data.
-  10. 🔄 **Practice Editing:** Change the `Quantity` in one of the rows.
-  11. 💾 **Save Again:** Save your changes!
+  1. 🚀 **Launch Excel:** Open a new, blank workbook.
+  2. 📂 **Import Data:** Click on the Data tab > From Text/CSV > navigate to the Dataset/Lesson1 folder and select `bestsellers with categories.csv`.
+  3. 💾 **Save:** Save the workbook as `Amazon_Bestsellers_Analysis.xlsx`.
+  4. 📝 **Rename Sheet:** Rename the sheet to `Books Data`.
+  5. 🎨 **Format Headers:** Select row 1 (headers). Apply **Bold** formatting and add a light blue background fill color.
+  6. 💲 **Format Price:** Select the `Price` column and apply the `Currency` format with 2 decimal places.
+  7. 🔢 **Format Years:** Select the `Year` column and apply the `Number` format with 0 decimal places.
+  8. ↔️ **Column Width:** Adjust column widths for better readability (double-click on column dividers or use Format > Column Width).
+  9. 🔍 **Data Exploration:** Scroll through the data to become familiar with the structure and content.
+  10. 💾 **Save Changes:** Save your formatted workbook.
+
+### Activity 2: Iris Dataset Visualization
+
+* **Dataset:** `iris.csv` (found in Dataset/Lesson1 folder)
+* **Goal:** Create a formatted table to visualize the Iris dataset.
+* **Steps:**
+  1. 🚀 **Open Excel:** Create a new workbook (or new sheet in your existing workbook).
+  2. 📂 **Import Data:** Import the `iris.csv` file using Data tab > From Text/CSV.
+  3. 💾 **Save:** If using a new workbook, save it as `Iris_Dataset_Practice.xlsx`.
+  4. 📝 **Rename Sheet:** Name the sheet `Iris Flowers Data`.
+  5. 🎨 **Format Table:** Convert the data to a table (Ctrl+T or Insert tab > Table). Choose a table style you like.
+  6. 🔢 **Format Numbers:** Select the numerical columns (sepal length/width, petal length/width) and format them to Number with 1 decimal place.
+  7. 📊 **Color Coding:** Use conditional formatting on the species column to highlight different species with different colors:
+     * Select the species column > Home tab > Conditional Formatting > Highlight Cell Rules > Equal To > Enter "setosa" > Choose a color
+     * Repeat for "versicolor" and "virginica" with different colors
+  8. ⚙️ **Freeze Headers:** Keep headers visible by using View tab > Freeze Panes > Freeze Top Row.
+  9. 🔄 **Sort & Filter:** Practice using the filter buttons in the header row to sort species alphabetically.
+  10. 💾 **Save Changes:** Save your formatted workbook.
+
+### Bonus Challenge: Create a Summary Sheet
+
+* Create a new sheet named "Summary"
+* In cell A1, type "Amazon Bestsellers Summary" and format it as a title
+* In cell A3, create a cell that counts the total number of books in the dataset (Hint: use COUNTA function)
+* In cell A4, list the average price of all books (without using formulas yet - we'll cover that in later lessons)
+* Apply professional formatting to make your summary sheet visually appealing
 
 ---

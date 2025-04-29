@@ -17,7 +17,7 @@ This course guides you through the fundamentals of Excel for data analysis, star
 
 ```
 📊 Excel for Data Analysis Learning Journey 📊
-                                                   
+
 Prerequisites ➡️ Lesson 1 ➡️ Lesson 2 ➡️ Lesson 3 ➡️ Lesson 4 ➡️ Lesson 5 ➡️ Lesson 6 ➡️ Lesson 7 ➡️ Lesson 8 ➡️ Lesson 9
    🔍           📝        🧹         🧮          🔢         📊          📈          🔬         🏆         🎓
 Basic Excel    Excel     Data     Formula    Advanced    Pivot      Data      Analysis    Mini-     Review &
