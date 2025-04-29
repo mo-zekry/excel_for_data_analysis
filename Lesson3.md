@@ -29,19 +29,23 @@
   ![Cell Referencing Example](./Images/Lesson3/cell_referencing.png)
   *Example showing how cell references work in formulas*
 
+  <!-- range image -->
+  ![Range Example](./Images/Lesson3/range_example.png)
+
+
 ### 2. Absolute vs. Relative Referencing: The Power of the `$`
 
 * **Relative Referencing (Default):** References adjust automatically when you copy/paste or fill a formula. If you copy `=A1+B1` from cell `C1` down to `C2`, it becomes `=A2+B2`.
 
   * *Example:* `A1`
 
-  ![Relative Referencing Example](./Images/Lesson3/relative_reference.png)
+  ![Relative Referencing Example](./Images/Lesson3/relative_reference.gif)
   *Example showing how relative references change when copied down or across*
 * **Absolute Referencing:** References **do not** change when copied/filled. Use the dollar sign (`$`) before the column letter and row number.
 
   * *Example:* `$A$1` (Always refers to cell A1, no matter where the formula is copied).
 
-  ![Absolute Referencing Example](./Images/Lesson3/absolute_reference.png)
+  ![Absolute Referencing Example](./Images/Lesson3/absolute_reference.gif)
   *Example showing how absolute references stay fixed when copied*
 * **Mixed Referencing:** Either the row or the column is absolute, while the other is relative.
 
@@ -50,7 +54,7 @@
   * > **Pro Tip:** Use the `F4` key while editing a cell reference in the formula bar to cycle through relative, absolute, and mixed options!
     >
 
-  ![Mixed Referencing Example](./Images/Lesson3/mixed_reference.png)
+  ![Mixed Referencing Example](./Images/Lesson3/mixed_reference.gif)
   *Example showing how mixed references partially adjust when copied*
 
 ### 3. Commonly Used Excel Functions for Analysis
@@ -58,8 +62,6 @@
 * **Functions** are pre-built formulas that perform specific calculations.
 * **Syntax:** `=FUNCTIONNAME(argument1, argument2, ...)`
 
-  ![Function Syntax](./Images/Lesson3/function_syntax.png)
-  *Example showing the structure of an Excel function*
 * **Basic Math Functions:**
 
   * `SUM(range)`: Adds all numbers in a range of cells. *Ex: `=SUM(A1:A10)`*
@@ -69,25 +71,18 @@
   * `MIN(range)`: Finds the smallest number in a range. *Ex: `=MIN(E1:E10)`*
   * `MAX(range)`: Finds the largest number in a range. *Ex: `=MAX(F1:F10)`*
 
-  ![Math Functions Example](./Images/Lesson3/math_functions.png)
-  *Example showing how basic math functions calculate values from data*
 * **Logical Functions:** Used for decision-making.
 
   * `IF(logical_test, value_if_true, value_if_false)`: Returns one value if a condition is true, and another if it's false. *Ex: `=IF(A1>10, "Pass", "Fail")`*
   * `AND(logical1, [logical2], ...)`: Returns `TRUE` if ALL arguments are true, otherwise `FALSE`. Often used within `IF`. *Ex: `=IF(AND(A1>10, B1="Active"), "Proceed", "Stop")`*
   * `OR(logical1, [logical2], ...)`: Returns `TRUE` if ANY argument is true, otherwise `FALSE`. Often used within `IF`. *Ex: `=IF(OR(A1="Shipped", B1="Delivered"), "Complete", "Pending")`*
 
-  ![Logical Functions Example](./Images/Lesson3/logical_functions.png)
-  *Example showing how IF, AND, and OR functions work with conditions*
 * **Text Functions:** Used for manipulating text strings.
 
   * `CONCATENATE(text1, [text2], ...)` or using the `&` operator: Joins several text strings into one. *Ex: `=CONCATENATE(A1, " ", B1)` or `=A1 & " " & B1` (to join first and last names with a space).
   * `LEFT(text, num_chars)`: Returns a specified number of characters from the start of a text string. *Ex: `=LEFT(A1, 3)` (gets the first 3 characters).
   * `RIGHT(text, num_chars)`: Returns a specified number of characters from the end of a text string. *Ex: `=RIGHT(A1, 2)` (gets the last 2 characters).
   * `LEN(text)`: Returns the number of characters in a text string (length). *Ex: `=LEN(A1)`*
-
-  ![Text Functions Example](./Images/Lesson3/text_functions.png)
-  *Example showing how text functions manipulate string data*
 
 ### 4. Error Handling in Excel Formulas
 
@@ -101,15 +96,10 @@
   * `#REF!`: A cell reference is not valid (e.g., cell was deleted).
   * `#VALUE!`: Wrong type of argument or operand is used (e.g., adding text to a number).
 
-  ![Common Excel Errors](./Images/Lesson3/common_errors.png)
-  *Examples of common Excel formula errors*
 * **Basic Handling with `IFERROR`:**
 
   * `IFERROR(value, value_if_error)`: Checks if the first part results in an error. If it does, it returns the `value_if_error`; otherwise, it returns the result of the `value`.
   * *Ex: `=IFERROR(A1/B1, "Cannot Divide")` (Instead of showing `#DIV/0!`, it will show "Cannot Divide" if B1 is 0).
-
-  ![IFERROR Example](./Images/Lesson3/iferror_example.png)
-  *Example showing how IFERROR can provide user-friendly error messages*
 
 ---
 
