@@ -51,8 +51,6 @@
   * **Missing Values:** Discuss options like deleting rows/columns (use with caution!), filling with a specific value (0, "N/A", mean, median - depending on context), or using more advanced imputation techniques (mention briefly).
   * **Incorrect Values:** Correcting typos manually, using Find & Replace (`Ctrl+H`), or applying consistent formatting.
 
-  ![Handling Missing Data](./Images/Lesson2/handling_missing_data.png)
-  *Strategies for dealing with missing values in Excel*
 
   ```mermaid
   flowchart TD
@@ -101,6 +99,7 @@
     style F3c fill:#383A59,stroke:#50FA7B,stroke-width:1px,color:#F8F8F2
   ```
 
+  *Strategies for dealing with missing values in Excel*
 
 ### 3. Organizing Data: Sorting & Filtering
 
