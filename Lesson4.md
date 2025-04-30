@@ -24,15 +24,15 @@
   * > **Limitation:** Can only look up based on the *first* column and only look *right*.
     >
 
-  ![VLOOKUP Function](./Images/Lesson4/vlookup_example.png)
-  *Example of VLOOKUP retrieving product information based on product ID*
+  ![VLOOKUP Function](./Images/Lesson4/vlookup_example.gif)
+  *Example of VLOOKUP retrieving Departments information based on Employee ID*
 * **`HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])`:** Similar to `VLOOKUP`, but searches for a value in the **first row** of a table array and returns the value in the same column from a specified row.
 
   * Arguments are analogous to `VLOOKUP`, but `row_index_num` specifies the row to return from.
   * > **Common Use:** Finding data based on column headers (e.g., finding sales for a specific month when months are headers).
     >
 
-  ![HLOOKUP Function](./Images/Lesson4/hlookup_example.png)
+  ![HLOOKUP Function](./Images/Lesson4/hlookup_example.gif)
   *Example of HLOOKUP retrieving data based on column headers*
 * **`INDEX(array, row_num, [column_num])` & `MATCH(lookup_value, lookup_array, [match_type])` (Brief Introduction):** A powerful and flexible alternative to `VLOOKUP`/`HLOOKUP`.
 
@@ -43,8 +43,14 @@
   * > **Advantage:** Can look up based on any column/row, can look left/up, more robust if columns/rows are inserted/deleted within the table.
     >
 
-  ![INDEX MATCH Functions](./Images/Lesson4/index_match.png)
-  *Example comparing INDEX-MATCH with VLOOKUP for flexible lookup operations*
+  ![INDEX MATCH Functions](./Images/Lesson4/index.gif)
+  *Example of INDEX*
+
+  ![INDEX MATCH Functions](./Images/Lesson4/match.gif)
+  *Example of MATCH*
+
+  ![INDEX MATCH Functions](./Images/Lesson4/index_match.gif)
+  *Example INDEX-MATCH for flexible lookup operations*
 
 ### 2. Date and Time Functions: Working with Time
 
@@ -53,13 +59,13 @@
   * `TODAY()`: Returns the current date (updates automatically).
   * `NOW()`: Returns the current date and time (updates automatically).
 
-  ![TODAY and NOW Functions](./Images/Lesson4/today_now_functions.png)
+  ![TODAY and NOW Functions](./Images/Lesson4/today_now_functions.gif)
   *Using TODAY() and NOW() to get the current date and time*
 * **Creating Dates:**
 
   * `DATE(year, month, day)`: Creates a valid Excel date from year, month, and day numbers. *Ex: `=DATE(2024, 12, 25)`*
 
-  ![DATE Function](./Images/Lesson4/date_function.png)
+  ![DATE Function](./Images/Lesson4/date_function.gif)
   *Using the DATE function to create dates from individual components*
 * **Calculating Date Differences:**
 
@@ -67,7 +73,7 @@
     * > **Note:** `DATEDIF` is a "hidden" function; it might not appear in autocomplete but works.
       >
 
-  ![DATEDIF Function](./Images/Lesson4/datedif_function.png)
+  ![DATEDIF Function](./Images/Lesson4/datedif_function.gif)
   *Using DATEDIF to calculate time periods between dates*
 * **Extracting Date Components:**
 
@@ -75,7 +81,7 @@
   * `MONTH(serial_number)`: Returns the month (1-12) from a date.
   * `DAY(serial_number)`: Returns the day of the month (1-31) from a date.
 
-  ![Date Component Functions](./Images/Lesson4/date_components.png)
+  ![Date Component Functions](./Images/Lesson4/date_components.gif)
   *Using YEAR, MONTH, and DAY functions to extract components from dates*
 
 ### 3. Conditional Calculations: Summing and Counting with Criteria
@@ -84,7 +90,7 @@
 
   * `COUNTIF(range, criteria)`: Counts the number of cells within a range that meet a given condition. *Ex: `=COUNTIF(A1:A100, ">50")` or `=COUNTIF(B1:B100, "Shipped")`*
 
-  ![COUNTIF Function](./Images/Lesson4/countif_function.png)
+  ![COUNTIF Function](./Images/Lesson4/countif_function.gif)
   *Using COUNTIF to count values meeting specific criteria*
 
   * `SUMIF(range, criteria, [sum_range])`: Adds the cells specified by a given condition or criteria.
@@ -92,21 +98,21 @@
     * `criteria`: The condition (e.g., `">50"`, `"Apples"`).
     * `[sum_range]`: Optional. The actual cells to sum if different from `range`. *Ex: `=SUMIF(A1:A100, "East", B1:B100)`* (Sums values in column B where column A is "East").
 
-  ![SUMIF Function](./Images/Lesson4/sumif_function.png)
+  ![SUMIF Function](./Images/Lesson4/sumif_function.gif)
   *Using SUMIF to sum values that meet specific criteria*
 * **Multiple Criteria:**
 
   * `COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2], ...)`: Counts cells that meet multiple conditions across different ranges (ranges must have the same size/shape).
     * *Ex: `=COUNTIFS(A1:A100, "East", C1:C100, ">1000")`* (Counts rows where Region in A is "East" AND Sales in C are > 1000).
 
-  ![COUNTIFS Function](./Images/Lesson4/countifs_function.png)
+  ![COUNTIFS Function](./Images/Lesson4/countifs_function.gif)
   *Using COUNTIFS to count values meeting multiple criteria*
 
   * `SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)`: Adds cells that meet multiple conditions across different ranges.
     * `sum_range`: The range containing the values to sum.
     * *Ex: `=SUMIFS(B1:B100, A1:A100, "East", C1:C100, ">1000")`* (Sums values in B where Region in A is "East" AND Sales in C are > 1000).
 
-  ![SUMIFS Function](./Images/Lesson4/sumifs_function.png)
+  ![SUMIFS Function](./Images/Lesson4/sumifs_function.gif)
   *Using SUMIFS to sum values meeting multiple criteria*
 
 ---
