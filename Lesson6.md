@@ -40,10 +40,6 @@
   ![Scatter Plots](./Images/Lesson6/scatter_plots.png)
   *Scatter plots showing correlations between two variables*
 
-  * 📊 **Histograms:** Visualize the distribution of a single numerical variable by grouping data into bins (ranges) and showing the frequency (count) within each bin. (Found under Statistical charts).
-
-  ![Histograms](./Images/Lesson6/histograms.png)
-  *Histograms showing the distribution of values in different bins*
 * **Chart Elements & Formatting:**
 
   * Adding/Modifying Titles, Axis Labels, Data Labels, Legends (Use the `+` icon or `Chart Design` tab).
@@ -84,8 +80,7 @@
 
   * **Managing Rules:** Edit, delete, or change the order of applied rules.
 
-  ![Managing Rules](./Images/Lesson6/manage_rules.png)
-  *Managing multiple conditional formatting rules in a worksheet*
+   Managing multiple conditional formatting rules in a worksheet
 
 ### 3. Introduction to Excel Dashboards: Bringing It All Together
 
@@ -100,8 +95,7 @@
   * **Presentation Layer:** Charts, Key Performance Indicators (KPIs), and other visuals derived from the analysis layer.
   * **Interactivity:** Slicers and Timelines (as seen in Lesson 5) to allow users to filter the dashboard dynamically.
 
-  ![Dashboard Components](./Images/Lesson6/dashboard_components.png)
-  *The different layers of a dashboard showing how data flows from source to presentation*
+  - The different layers of a dashboard showing how data flows from source to presentation
 * **Design Principles (Basic):**
 
   * **Audience & Purpose:** Who is it for? What questions should it answer?
@@ -109,14 +103,12 @@
   * **Clarity:** Use clear titles and labels. Avoid clutter.
   * **Consistency:** Use consistent colors and formatting.
 
-  ![Dashboard Design](./Images/Lesson6/dashboard_design.png)
-  *Examples of good and poor dashboard design practices*
+  - Examples of good and poor dashboard design practices
 * **Combining Elements:** Arrange Pivot Charts, standard charts (potentially linked to summary data derived from Pivot Tables or formulas), Slicers, and Timelines on a single worksheet.
 
   * Ensure Slicers/Timelines are connected to the relevant Pivot Tables/Charts (`Report Connections...`).
 
-  ![Connecting Dashboard Elements](./Images/Lesson6/connecting_elements.png)
-  *Connecting slicers to multiple pivot tables and charts in a dashboard*
+  - Connecting slicers to multiple pivot tables and charts in a dashboard
 
 ---
 

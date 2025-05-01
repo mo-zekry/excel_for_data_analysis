@@ -28,7 +28,7 @@
       * **Rows:** Creates row labels from the field's unique values.
       * **Values:** Performs calculations (Sum, Count, Average, etc.) on the data.
 
-  ![Creating Pivot Tables](./Images/Lesson5/create_pivot_table.png)
+  ![Creating Pivot Tables](./Images/Lesson5/create_pivot_table.gif)
   *Creating a pivot table from source data showing the Insert tab and dialog box*
 * **Summarizing Data:**
 
@@ -36,27 +36,20 @@
   * Drag categorical fields (text, dates) to `Rows` or `Columns` to group data.
   * Change the calculation type in the `Values` area (Right-click field > `Value Field Settings...` or Left-click > `Value Field Settings...`) - choose Sum, Count, Average, Max, Min, etc.
 
-  ![PivotTable Fields Pane](./Images/Lesson5/pivot_fields_pane.png)
-  *The PivotTable Fields pane showing fields dragged to different areas*
 * **Modifying Pivot Tables:**
 
   * Rearrange fields by dragging them between areas or within an area.
   * Add or remove fields.
   * Refresh the Pivot Table (`Data` tab > `Refresh All` or Right-click > `Refresh`) if the source data changes.
 
-  ![Modifying Pivot Tables](./Images/Lesson5/modify_pivot_table.png)
-  *Rearranging fields and refreshing the pivot table when source data changes*
 * **Filtering, Sorting, and Grouping:**
 
   * **Filtering:** Use the `Filters` area, or click the dropdown arrows on Row/Column labels.
   * **Sorting:** Click the dropdown arrows on Row/Column labels and choose sort options (A-Z, Z-A, More Sort Options).
   * **Grouping:** Select items (rows or columns), right-click > `Group`. Especially useful for dates (group by Year, Quarter, Month) or numerical ranges.
 
-  ![Filtering and Sorting](./Images/Lesson5/pivot_filtering_sorting.png)
-  *Filtering and sorting options in a Pivot Table*
-
-  ![Grouping Data](./Images/Lesson5/pivot_grouping.png)
-  *Grouping data in a Pivot Table, especially useful for dates*
+![Filtering and Sorting](./Images/Lesson5/pivot_filtering_sorting.gif)
+*Filtering and sorting options in a Pivot Table*
 
 ### 2. Pivot Charts: Visualizing Pivot Table Data
 
@@ -67,7 +60,7 @@
   * Go to the `PivotTable Analyze` tab (contextual tab) > `Tools` group > `PivotChart`.
   * Choose the desired chart type (Column, Bar, Pie, Line, etc.).
 
-  ![Creating Pivot Charts](./Images/Lesson5/create_pivot_chart.png)
+  ![Creating Pivot Charts](./Images/Lesson5/create_pivot_chart.gif)
   *Creating a Pivot Chart from an existing Pivot Table*
 * **Formatting Pivot Charts:**
 
@@ -76,8 +69,6 @@
   * Apply chart styles and colors.
   * Filter directly on the chart using the interactive field buttons.
 
-  ![Formatting Pivot Charts](./Images/Lesson5/format_pivot_chart.png)
-  *Formatting options for Pivot Charts to enhance visualization*
 
 ### 3. Interactive Dashboards Basics
 
