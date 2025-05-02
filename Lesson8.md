@@ -17,8 +17,6 @@
 
   * **Data Acquisition:** Import a provided dataset (e.g., sales, marketing campaign results, HR data).
 
-  ![Data Import](./Images/Lesson8/data_import.png)
-  *Importing the project dataset into Excel*
 
   * **Data Cleaning & Preparation (Lesson 2):**
     * Handle missing values.
@@ -27,37 +25,23 @@
     * Remove duplicates.
     * Ensure proper data types (numbers, dates, text).
 
-  ![Data Cleaning](./Images/Lesson8/data_cleaning.png)
-  *Cleaning and preparing the dataset for analysis*
-
   * **Data Exploration & Calculation (Lessons 3 & 4):**
     * Add calculated columns using formulas (e.g., Profit = Revenue - Cost, Age from Birthdate).
     * Use functions like `IF`, `SUMIFS`, `COUNTIFS`, `VLOOKUP` (if applicable) to derive additional insights or segment data.
 
-  ![Data Calculations](./Images/Lesson8/data_calculations.png)
-  *Adding calculated columns and using advanced functions*
-
   * **Data Summarization (Lesson 5):**
     * Create Pivot Tables to summarize key metrics across different dimensions (e.g., Sales by Region, Average Order Value by Customer Segment).
-
-  ![Data Summarization](./Images/Lesson8/data_summarization.png)
-  *Using Pivot Tables to summarize key metrics from the data*
 
   * **Data Visualization (Lessons 5 & 6):**
     * Create Pivot Charts based on the Pivot Tables.
     * Create standard charts if needed for specific visualizations.
     * Apply Conditional Formatting to tables or raw data for quick highlights.
 
-  ![Data Visualization](./Images/Lesson8/data_visualization.png)
-  *Creating charts and visual elements to represent the analyzed data*
-
   * **Dashboard Creation (Lesson 6):**
     * Combine key charts and potentially summary Pivot Tables onto a single `Dashboard` sheet.
     * Add Slicers and/or Timelines for interactivity.
     * Ensure slicers are connected to all relevant report elements.
 
-  ![Dashboard Creation](./Images/Lesson8/dashboard_creation.png)
-  *Building an interactive dashboard with the project's key elements*
 
 ### 2. Presentation Basics: Communicating Your Findings
 
@@ -70,8 +54,6 @@
   * **Supporting Details:** Briefly explain the data and methodology if necessary.
   * **Conclusion/Recommendations:** Summarize the findings and suggest potential actions or next steps based on the analysis.
 
-  ![Presentation Structure](./Images/Lesson8/presentation_structure.png)
-  *Example of a well-structured data presentation with clear sections*
 * **Using Excel for Presentation:**
 
   * **The Dashboard:** Use the interactive dashboard itself to walk through findings, filtering live to answer questions.
@@ -79,8 +61,6 @@
   * **Highlighting:** Use callouts, annotations (can be added via Insert > Shapes), or simply point out key areas on charts during the presentation.
   * **Storytelling:** Guide the audience through the data story – what was the question, what does the data show, what does it mean?
 
-  ![Presentation Techniques](./Images/Lesson8/presentation_techniques.png)
-  *Techniques for effectively presenting Excel data analysis results*
 
 ---
 
